@@ -51,6 +51,8 @@ Pada praktikum ini, fokus utama ada pada dua layer terakhir, yaitu **Analytics L
 
 Berikut dokumentasi proses praktikum 2 batch data ingestion & processing with spark:
 
+[![Download Power BI Dashboard](https://img.shields.io/badge/Download-bigdata_dashboard%20pbix-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/mkaspulanwar/p3_bigdata_batchdata_analytics/blob/main/screenshots_powerbi/bigdata_dashboard.pbix)
+
 <table>
 <tr>
 <td align="center"><b>Dashboard Power BI</b></td>
