@@ -3,22 +3,12 @@
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
-## Deskripsi Praktikum
-
-Praktikum Week 3 ini berfokus 
----
-
 ## Tim Developer
 
 | Peran | Nama | NIM | Profil GitHub |
 | :--- | :--- | :--- | :--- |
 | **Pengembang Proyek** | M. Kaspul Anwar | 230104040212 | [![](https://img.shields.io/badge/GitHub-M.KaspulAnwar-181717?style=flat&logo=github)](https://github.com/mkaspulanwar) |
 | **Dosen Pengampu** | Muhayat, M. IT | - | [![](https://img.shields.io/badge/GitHub-Muhayat,M.IT-181717?style=flat&logo=github)](https://github.com/muhayat-lab) |
-
----
-
-## Tujuan Praktikum
-Setelah praktikum ini, kamu diharapkan mampu:
 
 ---
 
