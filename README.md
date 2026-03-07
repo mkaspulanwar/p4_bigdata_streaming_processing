@@ -38,10 +38,21 @@ Berikut dokumentasi proses praktikum 2 batch data ingestion & processing with sp
 
 <table>
 <tr>
-<td align="center"><b>Menjalankan Pipeline: python scripts/batch_pipeline_enterprise.py</b></td>
+<td align="center"><b>Dashboard Power BI</b></td>
+<td align="center"><b>Folder Serving Dataset</b></td>
 </tr>
 <tr>
-<td><img src="screenshots/bukti_praktikum.png"/></td>
+<td><img src="screenshots_powerbi/dashboard_powerbi.png"/></td>
+<td><img src="screenshots_powerbi/data_serving.png"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Script Analytics Layer</b></td>
+<td align="center"><b>Script Analytics Layer</b></td>
+</tr>
+<tr>
+<td><img src="screenshots_powerbi/analytics_layer1.png"/></td>
+<td><img src="screenshots_powerbi/analytics_layer2.png"/></td>
 </tr>
 </table>
 
