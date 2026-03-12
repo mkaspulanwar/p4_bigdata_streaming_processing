@@ -60,15 +60,15 @@ bigdata-project/
 │   │   └── total_revenue/        # Total revenue metrics
 │   └── ecommerce_raw.csv         # Main raw dataset
 ├── logs/
-│   ├── stream_checkpoint/        # Streaming checkpoint files
-│   └── batch_pipeline.log        # Log file for batch pipeline
-├── screenshots/                  # Project screenshots for documentation
+│   ├── stream_checkpoint/              # Streaming checkpoint files
+│   └── batch_pipeline.log              # Log file for batch pipeline
+├── screenshots/                        # Project screenshots for documentation
 ├── scripts/
-│   ├── analytics_layer.py        # Analytics and aggregation logic
-│   ├── batch_pipeline_enterprise.py # Batch processing pipeline
-│   ├── streaming_layer.py        # Streaming ingestion and processing
-│   └── transaction_generator.py  # Transaction data generator
-├── stream_data/                  # Streaming input simulation data
+│   ├── analytics_layer.py              # Analytics and aggregation logic
+│   ├── batch_pipeline_enterprise.py    # Batch processing pipeline
+│   ├── streaming_layer.py              # Streaming ingestion and processing
+│   └── transaction_generator.py        # Transaction data generator
+├── stream_data/                        # Streaming input simulation data
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE
@@ -107,3 +107,84 @@ Hasil olahan disimpan ke direktori **serving** dalam format yang mudah dibaca ul
 ### 4. Visualization Layer
 
 Dashboard **Streamlit** mengambil data dari serving layer dan menampilkannya dalam bentuk visual yang interaktif agar insight dapat dipahami dengan cepat.
+
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone <url-repository>
+cd bigdata-project
+```
+
+### 2. Aktifkan Virtual Environment
+
+Jika environment sudah tersedia:
+
+```bash
+source .venv/bin/activate
+```
+
+Jika belum ada, buat terlebih dahulu:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Project
+
+### Menjalankan Pipeline
+
+Untuk menjalankan pipeline secara lengkap, gunakan **3 terminal** yang berjalan secara bersamaan.
+
+#### Terminal 1 — Spark Streaming
+
+```bash
+spark-submit scripts/streaming_layer.py
+```
+
+Terminal ini bertugas menjalankan proses **Spark Structured Streaming** untuk membaca dan memproses data streaming secara kontinu.
+
+#### Terminal 2 — Transaction Generator
+
+```bash
+python3 scripts/transaction_generator.py
+```
+
+Terminal ini digunakan untuk menjalankan **generator transaksi** yang mensimulasikan aliran data masuk ke pipeline.
+
+#### Terminal 3 — Dashboard
+
+```bash
+python -m streamlit run dashboard/dashboard_streamlit.py
+```
+
+Terminal ini digunakan untuk menjalankan **dashboard Streamlit** yang akan menampilkan hasil pemrosesan data secara real-time.
+
+### Membuka Dashboard
+
+Setelah ketiga terminal berjalan, buka browser lalu akses:
+
+```bash
+http://localhost:8501
+```
+
+## Expected Output
+
+Setelah pipeline berhasil dijalankan, beberapa output yang diharapkan akan terbentuk di dalam direktori **serving layer**, antara lain:
+
+```bash
+data/serving/total_revenue/
+data/serving/top_products/
+data/serving/category_revenue/
+data/serving/avg_transaction/
+```
+
+Selain itu, dashboard **Streamlit** akan menampilkan visualisasi **real-time** berdasarkan data terbaru yang tersedia dari hasil pipeline streaming.
