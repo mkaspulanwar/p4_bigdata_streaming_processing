@@ -30,6 +30,15 @@ Dengan kata lain, praktikum ini mensimulasikan workflow dasar yang umum digunaka
 
 ---
 
+## Tim Developer
+
+| Peran | Nama | NIM | Profil GitHub |
+| :--- | :--- | :--- | :--- |
+| **Pengembang Proyek** | M. Kaspul Anwar | 230104040212 | [![](https://img.shields.io/badge/GitHub-M.KaspulAnwar-181717?style=flat&logo=github)](https://github.com/mkaspulanwar) |
+| **Dosen Pengampu** | Muhayat, M. IT | - | [![](https://img.shields.io/badge/GitHub-Muhayat,M.IT-181717?style=flat&logo=github)](https://github.com/muhayat-lab) |
+
+---
+
 ## Key Features
 
 - **Streaming Processing** dengan Spark Structured Streaming
@@ -74,6 +83,40 @@ bigdata-project/
 ├── LICENSE
 └── README.md
 ```
+
+## Bukti Screenshots
+
+
+<table>
+<tr>
+<td align="center"><b>Struktur Project</b></td>
+<td align="center"><b>Generator Transaksi</b></td>
+</tr>
+<tr>
+<td><img src="screenshots/struktur_project.png"/></td>
+<td><img src="screenshots/transaction_generator.png"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Spark Streaming</b></td>
+<td align="center"><b>Folder data/serving/stream</b></td>
+</tr>
+<tr>
+<td><img src="screenshots/spark_streaming.png"/></td>
+<td><img src="screenshots/data_serving_stream.png"/></td>
+</tr>
+
+<tr>
+<td align="center"><b>Dashboard Realtime</b></td>
+<td align="center"><b>Dashboard Realtime</b></td>
+</tr>
+<tr>
+<td><img src="screenshots/dashboard_realtime1.png"/></td>
+<td><img src="screenshots/dashboard_realtime2.png"/></td>
+</tr>
+</table>
+
+---
 
 ## Workflow Architecture
 
